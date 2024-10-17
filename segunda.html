@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO DE SEMAFORO SIMPLES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="sterceira.html">proxima</a>
+        </button>
+    </body>
+    <br>
+    <h1>EXEMPLO DE CIRCUITO SEMAFORO SIMPLES</h1>
+    <br>
+    <img src="MONTAGEM.jpg" alt="exemplo de MONTAGEM">
+    <a href="https://www.tinkercad.com/dashboard">tinker cad</a>
+    <br>
+    <br>
+    <h1>DIAGRAMA DE BLOCOS DO  SEMAFORO SIMPLES</h1>
+    <br>
+    <img src="blocos02.jpg" alt="diagrama de blocos">
+    <a href="https://www.tinkercad.com/dashboard">tinker cad</a>
+    <br>
+    <br>
+    <h2>TEXTO DO CODIGO C++ DO SEMAFORO SIMPLES </h2>
+    <br>
+    <pre>
+        // C++ code
+//
+void setup()
+{
+  pinMode(10, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(6, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(10, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(10, LOW);
+  digitalWrite(8, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(6, HIGH);
+  delay(9000); // Wait for 9000 millisecond(s)
+  digitalWrite(6, LOW);
+  delay(1); // Wait for 1 millisecond(s)
+}
+    </pre>
+    </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARDUÍNO na prática – SEMAFORO SIMPLES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="squarta.html">proxima</a>
+        </button>
+        <br>
+        <h1>PROGRAMAÇÃO DO SEMÁFORO SIMPLES COM CONTADOR DE LED INTERMITENTE</h1>
+        <br>
+        <img src="monatgem semaforo.JPG" alt="montando o semaforo">
+        <br>
+        <h1>VIDEO DO CIRCUITO</h1>
+        <br>
+        <video src="semaforo simples pratica.MP4" controls></video>
+        <br>
+        <h1>CODIGO C++ ARDUINO IDE</h1>
+        <br>
+        <img src="arduino ide2.jpg" alt="haiahiahia">
+        <br>
+        <h2>C++ TEXTO</h2>
+        <br>
+        <pre>
+        // C++ code
+//
+void setup()
+{
+  pinMode(10, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(6, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(10, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(10, LOW);
+  digitalWrite(8, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(8, LOW);
+  digitalWrite(6, HIGH);
+  delay(9000); // Wait for 9000 millisecond(s)
+  digitalWrite(6, LOW);
+  delay(1); // Wait for 1 millisecond(s)
+}
+       </pre>
+</body>
+
+</html>

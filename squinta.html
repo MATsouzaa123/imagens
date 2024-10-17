@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ARDUÍNO na prática – SEMAFORO DUPLO:</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <button>
+            <a href="sexta.html">proxima</a>
+        </button>
+    </body>
+    <h1>MONTAGEM DO SEMAFORO DUPLO</h1>
+    <br>
+    <img src="semaforo duploooooooooooooooooooooooooo.JPG" alt="">
+    <br>
+    <h1>VIDEO DO CIRCUITO</h1>
+    <br>
+    <video src="semaforo duplo pratica.MP4"controls></video>
+    <br>
+    <h1>c++ no arduino IDE</h1>
+    <br>
+    <img src="arduino ide3.jpg" alt="">
+    <br>
+    <img src="arduino ide3.1.jpg" alt="">
+    <br>
+    <h2>CODIGO TEXTO C++</h2>
+    <br>
+    <pre>
+        // C++ code
+//
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(8, HIGH);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  digitalWrite(10, LOW);
+  digitalWrite(9, HIGH);
+  digitalWrite(8, LOW);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(8, LOW);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(8, LOW);
+  delay(7000); // Wait for 7000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  digitalWrite(11, LOW);
+  digitalWrite(10, HIGH);
+  digitalWrite(9, LOW);
+  digitalWrite(8, LOW);
+  delay(2000); // Wait for 2000 millisecond(s)
+  delay(1); // Wait for 1 millisecond(s)
+}
+    </pre>
+
+    </html>
